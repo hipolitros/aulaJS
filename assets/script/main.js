@@ -45,3 +45,15 @@ const segundos = minutos * 60;
 if (idade > 0) {
         console.log('O usuario viveu ' + idade + ' Anos, ' + dias + ' Dias, ' + horas + ' Hs, ' + minutos + ' m, ' + segundos + ' s.')
 }
+
+// João comprou uma quantidade de balas para ele e seus amigos. A quantidade de balas que ele comprou é maior que a quantidade de amigos, mas não há como dividi-las igualmente. Faça um programa que, dada as quantidades de balas pelo usuário, calcule quantas faltam para que a divisão fique igual entre os amigos.
+
+const balas = prompt('Quantas balas?');
+const amigos = prompt('Quantos amigos?');
+const balasQueFaltam = balas % amigos;
+
+if (balasQueFaltam) {
+        console.log('Falta ' + balasQueFaltam);
+        console.log(balas + 'Balas');
+        console.log(amigos + 'Amigos');
+}
