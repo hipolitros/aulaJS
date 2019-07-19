@@ -1,4 +1,5 @@
-/* let idade = prompt('Qual a sua idade?');
+/* 
+let idade = prompt('Qual a sua idade?');
 const anoBase = 1980;
 const anoCorrente = (new Date()).getFullYear();
 let anoNascimento = anoCorrente - idade;
@@ -12,7 +13,8 @@ if (anoCorrente < anoBase) {
 
 // O usuário tem 18 ou 60 anos e se chama joão ou Maria
 
-/* const nome = prompt('Qual o seu nome?');
+/* 
+const nome = prompt('Qual o seu nome?');
 const anoNascimento = prompt('Qual o seu ano de nascimento?');
 const anoBase = (new Date()).getFullYear();
 const idade = anoBase - anoNascimento;
@@ -33,9 +35,9 @@ if (nome == 'João' || nome == 'Maria') {
 }
  */
 
-// Faça um programa que dada a idade do usuario em anos, 
-//calcule quantas horas ele viveu, aproximadamente.
+// Faça um programa que dada a idade do usuario em anos, calcule quantas horas ele viveu, aproximadamente.
 
+/* 
 const idade = prompt('Qual a sua idade?');
 const dias = idade * 365;
 const horas = dias * 24;
@@ -44,7 +46,8 @@ const segundos = minutos * 60;
 
 if (idade > 0) {
         console.log('O usuario viveu ' + idade + ' Anos, ' + dias + ' Dias, ' + horas + ' Hs, ' + minutos + ' m, ' + segundos + ' s.')
-}
+} 
+*/
 
 // João comprou uma quantidade de balas para ele e seus amigos. A quantidade de balas que ele comprou é maior que a quantidade de amigos, mas não há como dividi-las igualmente. Faça um programa que, dada as quantidades de balas pelo usuário, calcule quantas faltam para que a divisão fique igual entre os amigos.
 
@@ -52,8 +55,15 @@ const balas = prompt('Quantas balas?');
 const amigos = prompt('Quantos amigos?');
 const balasQueFaltam = balas % amigos;
 
-if (balasQueFaltam) {
-        console.log('Falta ' + balasQueFaltam);
-        console.log(balas + 'Balas');
-        console.log(amigos + 'Amigos');
+if (balasQueFaltam > 0) {
+        console.log('Falta ' + balasQueFaltam + ' balas');
+        console.log(balas + ' Balas');
+        console.log(amigos + ' Amigos');
+} else {
+        console.log('Todos vao receber a mesma quantidade');
 }
+
+
+//Altere o resultado do exercicio anterior para o que segue: Se quantidade de balas e amigos forem iguais, escrever "Todos vao receber a mesma quantidade" caso contrário informar quantas balas ainda faltam para todos ficarem com a mesma quantidade.
+
+const idade = prompt('Qual sua idade?');
