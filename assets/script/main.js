@@ -51,7 +51,7 @@ if (idade > 0) {
 
 // João comprou uma quantidade de balas para ele e seus amigos. A quantidade de balas que ele comprou é maior que a quantidade de amigos, mas não há como dividi-las igualmente. Faça um programa que, dada as quantidades de balas pelo usuário, calcule quantas faltam para que a divisão fique igual entre os amigos.
 
-const balas = prompt('Quantas balas?');
+/* const balas = prompt('Quantas balas?');
 const amigos = prompt('Quantos amigos?');
 const balasQueFaltam = balas % amigos;
 
@@ -61,9 +61,70 @@ if (balasQueFaltam > 0) {
         console.log(amigos + ' Amigos');
 } else {
         console.log('Todos vao receber a mesma quantidade');
-}
+} */
 
 
 //Altere o resultado do exercicio anterior para o que segue: Se quantidade de balas e amigos forem iguais, escrever "Todos vao receber a mesma quantidade" caso contrário informar quantas balas ainda faltam para todos ficarem com a mesma quantidade.
 
-const idade = prompt('Qual sua idade?');
+/* const idade = prompt('Qual sua idade?'); */
+
+//Calcurar IMC do usuario
+
+/* let altura = prompt('Qual a sua altura?');
+let peso = prompt('Qual o seu peso?');
+let calculoAltura = altura * altura;
+let imc = peso / calculoAltura;
+
+if (imc < 18) {
+    console.log('Esta abaixo do peso.');
+} else if (imc >= 18 && imc <= 24) {
+    console.log('Esta com o peso normal.');
+} else if (imc >= 25 && imc <= 29) {
+    console.log('Esta com sobre peso.');
+} else {
+
+} */
+
+//2 componentes do tipo A, 3 do tipo B e 7 do C. Quantas placas pode ser montadas no maximo?
+
+/* const componenteA = prompt('Quantos componentes A?');
+const componenteB = prompt('Quantos componentes B?');
+const componenteC = prompt('Quantos componentes C?');
+
+const placaA = componenteA/2;
+const placaB = componenteB/3;
+const placaC = componenteC/7;
+
+let maximo = placaA
+
+if (placaB < maximo){
+    maximo = placaB;
+}
+
+if (placaC < maximo) {
+    maximo = placaC;
+}
+
+maximo = Math.trunc(maximo);
+const pElemente = document.createElement('p');
+pElemente.innerText = `Com esta quantidade pode-se fazer ${maximo} placas!`;
+document.body.appendChild(pElemente); */
+
+//Um banco precisa que cada cliente tenha uma senha de 4 digitos, sendo que todos digitos devem ser diferentes que '0'. Faça um programa que receba a senha e verifique se a senha é valida.
+
+const senha = prompt('Digite sua senha aqui.');
+let mensagem;
+if (senha.length !== 4) {
+    console.log('Quantidade de numeros exedeu 4 digitos');
+    mensagem = 'Quantidade de numeros exedeu 4 digitos';
+}    else if (senha.includes('0')) {
+    console.log('Digite uma senha que não tenha 0.') ;
+    mensagem = "Digite uma senha que não tenha 0"
+}    else {
+    console.log('Senha valida!');
+    mensagem = "Senha valida!";
+}
+
+const pElemente = document.createElement('p');
+pElemente.innerText = mensagem;
+document.body.appendChild(pElemente);
