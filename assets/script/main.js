@@ -115,16 +115,23 @@ document.body.appendChild(pElemente); */
 const senha = prompt('Digite sua senha aqui.');
 let mensagem;
 if (senha.length !== 4) {
-    console.log('Quantidade de numeros exedeu 4 digitos');
-    mensagem = 'Quantidade de numeros exedeu 4 digitos';
+    console.log('Senha inválida!');
+    mensagem = 'Senha inválida!';
 }    else if (senha.includes('0')) {
-    console.log('Digite uma senha que não tenha 0.') ;
-    mensagem = "Digite uma senha que não tenha 0"
+    console.log('Senha inválida!') ;
+    mensagem = 'Senha inválida!';
 }    else {
-    console.log('Senha valida!');
-    mensagem = "Senha valida!";
+    console.log('Senha válida!');
+    mensagem = "Senha válida!";
 }
 
 const pElemente = document.createElement('p');
 pElemente.innerText = mensagem;
 document.body.appendChild(pElemente);
+
+//Dado um numero, verificar se o numero é par e se o mesmo for maior que 2 verificar se é divisivel por 10. Se numero for impar verificar se é divisivel por 9. Casa contrario sempre escrever o numero nao satifez nenhuma das condições anteriores.
+
+
+const numero = 75;
+
+
