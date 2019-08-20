@@ -112,7 +112,7 @@ document.body.appendChild(pElemente); */
 
 //Um banco precisa que cada cliente tenha uma senha de 4 digitos, sendo que todos digitos devem ser diferentes que '0'. Faça um programa que receba a senha e verifique se a senha é valida.
 
-const senha = prompt('Digite sua senha aqui.');
+/* const senha = prompt('Digite sua senha aqui.');
 let mensagem;
 if (senha.length !== 4) {
     console.log('Senha inválida!');
@@ -127,11 +127,24 @@ if (senha.length !== 4) {
 
 const pElemente = document.createElement('p');
 pElemente.innerText = mensagem;
-document.body.appendChild(pElemente);
+document.body.appendChild(pElemente); */
 
 //Dado um numero, verificar se o numero é par e se o mesmo for maior que 2 verificar se é divisivel por 10. Se numero for impar verificar se é divisivel por 9. Casa contrario sempre escrever o numero nao satifez nenhuma das condições anteriores.
 
 
 const numero = 75;
+let mensagem;
 
+function ePar(numero) => {
+    const verificar = numero.toString((numero.charAt(numero.length -1)));
+    console.log(verificar)
+} 
+if (numero % 2 === 0) {
+    mensagem = 'É par.';
+} else {
+    mensagem = 'É impar.';
+}
 
+const pElemente = document.createElement('p');
+pElemente.innerText = mensagem;
+document.body.appendChild(pElemente);
