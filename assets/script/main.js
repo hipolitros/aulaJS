@@ -135,11 +135,19 @@ document.body.appendChild(pElemente); */
 const numero = 75;
 let mensagem;
 
-function ePar(numero) => {
-    const verificar = numero.toString((numero.charAt(numero.length -1)));
-    console.log(verificar)
+function ePar(numero) {
+    const verificar = numero.toString().charAt(numero.toString().length - 1);
+    if (verificar % 2 === 0) {
+        return true;
+    }
+    return false;
 } 
-if (numero % 2 === 0) {
+
+const eDivisivePorDez = numero => {
+    const divisivel = numero.toString().charAt(numero.toString().length - 1);
+}
+
+if (ePar(numero)) {
     mensagem = 'É par.';
 } else {
     mensagem = 'É impar.';
