@@ -152,7 +152,7 @@ function eDivisivelPorDez(numero) {
 }
 
 function eDivisivelPorNove(numero) {
-    if (numero === 1, 3, 9) {
+    if (numero % 9 === 0) {
         return true;
     }
     return false;
@@ -165,15 +165,15 @@ if (ePar(numero)) {
 }
 
 if (eDivisivelPorDez(numero)){
-    mensagem = 'É divisivel por dez.';
+    mensagem += 'É divisivel por dez.';
 } else {
-    mensagem = 'Não é divisivel por dez.';
+    mensagem += 'Não é divisivel por dez.';
 }
 
 if (eDivisivelPorNove(numero)) {
-    mensagem = 'É divisivel por nove.';
+    mensagem += 'É divisivel por nove.';
 } else {
-    mensagem = 'Não é divisivel por nove.';
+    mensagem += 'Não é divisivel por nove.';
 }
 
 const pElemente = document.createElement('p');
