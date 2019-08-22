@@ -132,7 +132,7 @@ document.body.appendChild(pElemente); */
 //Dado um numero, verificar se o numero é par e se o mesmo for maior que 2 verificar se é divisivel por 10. Se numero for impar verificar se é divisivel por 9. Casa contrario sempre escrever o numero nao satifez nenhuma das condições anteriores.
 
 
-const numero = 75;
+const numero = 235;
 let mensagem;
 
 function ePar(numero) {
@@ -143,8 +143,19 @@ function ePar(numero) {
     return false;
 } 
 
-const eDivisivePorDez = numero => {
-    const divisivel = numero.toString().charAt(numero.toString().length - 1);
+function eDivisivelPorDez(numero) {
+    const divisivelDez = numero.toString().charAt(numero.toString().length - 1);
+    if (divisivelDez === 0) {
+        return true;
+    }
+    return false;
+}
+
+function eDivisivelPorNove(numero) {
+    if (numero === 1, 3, 9) {
+        return true;
+    }
+    return false;
 }
 
 if (ePar(numero)) {
@@ -153,6 +164,19 @@ if (ePar(numero)) {
     mensagem = 'É impar.';
 }
 
+if (eDivisivelPorDez(numero)){
+    mensagem = 'É divisivel por dez.';
+} else {
+    mensagem = 'Não é divisivel por dez.';
+}
+
+if (eDivisivelPorNove(numero)) {
+    mensagem = 'É divisivel por nove.';
+} else {
+    mensagem = 'Não é divisivel por nove.';
+}
+
 const pElemente = document.createElement('p');
 pElemente.innerText = mensagem;
 document.body.appendChild(pElemente);
+
