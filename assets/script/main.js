@@ -163,20 +163,24 @@ function eDivisivelPorNove(numero) {
 
 const ePar = numero => (numero % 2 === 0)? true : false; // verifica se é par ou impar
 const eDivisivelPorDez = numero => (numero % 10 === 0)? true : false; // verifia se é divisel por 10
-const eDivisivelPorNove = numero => (numero % 9 === 0)? true : false; // verifica se é divisil por 9
+//const eDivisivelPorNove = numero => (numero % 9 === 0)? true : false; // verifica se é divisil por 9
 const estaEntreDezECem = x => (x >= 10 && x <= 100)? true : false; // verifica se numero é maior que 10 e menor que 100 
 
-/* if(ePar(numero) && estaEntreDezECem(numero) && eDivisivelPorDez(numero))
-    
-{
+function eDivisivelPorNove(numero) { 
+    const separar = (""+numero).split("");
+    const somar = separar.map(i => parseInt.apply(i)).reduce(total, itemCorrente => (total + itemCorrente));
+    if (somar % 9 === 0) {
+        mensagem += 'É divisivel por nove.';
+    } 
+} 
+
+/* 
+if (ePar(numero) && estaEntreDezECem(numero) && eDivisivelPorDez(numero)) {
       mensagem = 'É par, esta entre dez e cem e é divisivel por 10.';
-} else 
-{
-    if (estaEntreDezECem(numero) && eDivisivelPorNove(numero))
-    {
+} else {
+    if (estaEntreDezECem(numero) && eDivisivelPorNove(numero)) {
         mensagem = 'É impar, esta entre dez e cem e é divisivel por 9.';
     }
-
 }
 
 if (ePar(numero)) {
@@ -197,20 +201,17 @@ if (eDivisivelPorNove(numero)) {
     mensagem = 'Não é divisivel por nove.';
 }*/
 
-if(ePar(numero)) { // verifica se é par ou impar
-
+if (ePar(numero)) { // verifica se é par ou impar
     mensagem = 'Ele é par.';
     if (estaEntreDezECem(numero)) { // verifica se numero é maior que 10 e menor que 100 
         mensagem += ' Esta entre dez e cem.';
         if (eDivisivelPorDez(numero)) { // verifia se é divisel por 10
             mensagem += ' É divisivel por 10.';
-        } 
-        else {
+        } else {
             mensagem += ' Não é divisivel por 10.';
         } 
     }
-} 
-else {
+} else {
     mensagem = 'É impar.';
     if (eDivisivelPorNove(numero)) { // verifica se é divisil por 9
         mensagem += ' E é divisivel por 9.';

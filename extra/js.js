@@ -10,7 +10,6 @@ if(ePar(numero)) { // verifica se é par ou impar
     if (estaEntreDezECem(numero)) { // verifica se numero é maior que 10 e menor que 100 
         mensagem += ' Esta entre dez e cem.';
         if (eDivisivelPorDez(numero)) { // verifia se é divisel por 10
-        
             mensagem += ' É divisivel por 10.';
         } 
         else {
@@ -21,7 +20,6 @@ if(ePar(numero)) { // verifica se é par ou impar
 else {
     mensagem = 'É impar.';
     if (eDivisivelPorNove(numero)) { // verifica se é divisil por 9
-    
         mensagem += ' E é divisivel por 9.';
     }
 } 
