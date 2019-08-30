@@ -221,3 +221,16 @@ const pElemente = document.createElement('p');
 pElemente.innerText = mensagem;
 document.body.appendChild(pElemente);
 
+
+
+
+
+
+let numeroJogadorUm = 76;
+let palpiteJogadorDois = 14;
+
+do {
+    palpiteJogadorDois + 1;
+} while (palpiteJogadorDois === numeroJogadorUm) {
+    console.log('')
+}
