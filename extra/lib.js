@@ -75,21 +75,98 @@
 //     console.log(`Parabéns você acertou o número: ${palpiteJogadorDois}`);
 // }
 
-let semaforo = 'vermelho';
-let mensagem = '';
-
-switch (semaforo) {
-    case 'vermelho':
-        mensagem = 'Pare';
-        break;
-    case 'amarelo':
-        mensagem = 'Atenção';
-        break;
-    case 'verde':
-         mensagem = 'Passe';
-         break;
-}
-console.log(mensagem);
-
 // console.log(`Parabéns você acertou o número: ${palpiteJogadorDois}`);
 // terminou o loop continua;
+// let semaforo = 'vermelho';
+// let mensagem = '';
+
+// switch (semaforo) {
+//     case 'vermelho':
+//         mensagem = 'Pare';
+//         break;
+//     case 'amarelo':
+//         mensagem = 'Atenção';
+//         break;
+//     case 'verde':
+//          mensagem = 'Passe';
+//          break;
+// }
+// console.log(mensagem);
+
+// Faca um jogo onde um jogador digita um número e o outro deve tentar advinhar. Enquanto o segundo jogador não acertar o número, uma mensagem "Você errou!" deve aparecer e também uma dica dizendo se o número secreto é maior ou menor do que o digitado. Se o jogador acertar, uma mensagem "Você ganhou!" deve aparecer.
+
+
+// const numeroJogadorUm = 39;
+// let palpiteJogadorDois = 78;
+
+// if (palpiteJogadorDois === numeroJogadorUm) {
+//     console.log(`Parabéns você acertou o número: ${palpiteJogadorDois}`);
+// } else {
+//     while(palpiteJogadorDois !== numeroJogadorUm) {
+//         console.log('Você errou!');
+//         console.log(`Voce digitou: ${palpiteJogadorDois}`);
+
+//         if (palpiteJogadorDois > numeroJogadorUm ) {
+//             palpiteJogadorDois = palpiteJogadorDois - 1;
+//             console.log('Seu palpite é maior do que o número que procuramos!');
+//         } 
+//         if (palpiteJogadorDois < numeroJogadorUm ){
+//             palpiteJogadorDois = palpiteJogadorDois + 1;
+//             console.log('Seu palpite é menor do que o número que procuramos!');
+//         } 
+//     }
+//     console.log(`Parabéns você acertou o número: ${palpiteJogadorDois}`);
+// }
+
+// Laço de repetição: Para
+
+// for (let i = 1; i <= 10; i++) {
+//     console.log(`${i}\n`);
+// }
+
+// console.log('Fim da instrução Para');
+
+const numeroInicial = 5;
+
+// for (let i = 1; i <= 10; i++) {
+//     let resultadoAtual = numeroInicial * i;
+//     console.log(`Calculo: ${numeroInicial} * ${i} = ${resultadoAtual}`);``
+// }
+
+
+// for (let i = 1; i <= 10; i++) {
+//     console.log(`Interação: ${i}\n`);
+//     if (i == 5) {
+//         break; // forca o loop a sair da interção
+//     }
+//     let resultadoAtual = numeroInicial * i;
+//     console.log(`Calculo: ${numeroInicial} * ${i} = ${resultadoAtual}`);
+// }
+
+// for (let i = 1; i <= 10; i++) {
+//     console.log(`Interação: ${i}\n`);
+//     if (i < 5) {
+//         continue; // forca o laço ir para a próxima interação sem executar a instrução
+//     }
+//     let resultadoAtual = numeroInicial * i;
+//     console.log(`Calculo: ${numeroInicial} * ${i} = ${resultadoAtual}`);
+// }
+
+// Faca um algoritimo que dada uma entrada numérica, calcule a tabuada do número até o 100.
+// Portugol
+// usuario digitou 20;
+// para controle iniciando em 1 e menor que 100 então
+// o sistema ira fazer controle multiplicado por 20
+
+let numeroEntrada = 20;
+for (let numeroControle = 1; numeroControle <=100; numeroControle++ ) {
+    let resultado = numeroControle * numeroEntrada;
+    console.log(`${numeroControle} * ${numeroEntrada} = ${resultado}`);
+}
+
+// Faca um algoritimo que dada duas entradas numéricas, x e y, calcule a tabuada de x até y.
+
+// Faca um algoritimo onde dado um numero, mostre um contagem regressiva até 0
+
+
+// Faca uma função que calcule o Fatorial de um numero.

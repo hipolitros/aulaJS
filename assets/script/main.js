@@ -258,7 +258,7 @@ if (eDivisivelPorNove(numero)) {
 let y = 13;
 let x = 6
 
-for (let x = 6; x <= y; x++) {
+for (let controle = x; controle <= y; controle++) {
     let resultado = x * y;
     console.log(`${x} * ${y} = ${resultado}`)
 }
