@@ -259,6 +259,6 @@ let y = 13;
 let x = 6
 
 for (let controle = x; controle <= y; controle++) {
-    let resultado = x * y;
-    console.log(`${x} * ${y} = ${resultado}`)
+    let resultado = x * controle;
+    console.log(`${x} * ${controle} = ${resultado}`)
 }
